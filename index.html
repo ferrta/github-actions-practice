@@ -1,12 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My CI/CD Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semen Sabov - DevOps Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            margin: 30px 0;
+        }
+        
+        .section h2 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 5px;
+        }
+        
+        .project {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+        }
+        
+        .project h3 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .tech {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .links {
+            margin-top: 20px;
+        }
+        
+        .links a {
+            display: inline-block;
+            background: #764ba2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        
+        .links a:hover {
+            background: #667eea;
+        }
+        
+        .deployment-info {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <h1>Deployed with GitHub Actions!</h1>
-    <p>This site automatically deploys when I push to GitHub.</p>
-    <p>Last updated: <span id="date"></span></p>
+    <div class="container">
+        <h1>Semen Sabov</h1>
+        <p class="subtitle">DevOps Engineer | AWS | Terraform | CI/CD</p>
+        
+        <div class="section">
+            <h2>About</h2>
+            <p>Self-taught DevOps Engineer with hands-on experience building cloud infrastructure, automation pipelines, and serverless applications on AWS. Passionate about Infrastructure as Code, automation, and continuous learning.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <h3>CI/CD Pipeline with GitHub Actions</h3>
+                <p>Automated deployment pipeline that deploys this website to AWS S3 on every git push. Demonstrates continuous deployment, AWS integration, and secrets management.</p>
+                <div class="tech-stack">
+                    <span class="tech">GitHub Actions</span>
+                    <span class="tech">AWS S3</span>
+                    <span class="tech">CI/CD</span>
+                    <span class="tech">YAML</span>
+                </div>
+            </div>
+            
+            <div class="project">
+                <h3>Serverless REST API</h3>
+                <p>Production-ready REST API with CRUD operations using AWS Lambda, API Gateway, and RDS. Includes VPC networking, security groups, CORS configuration, and error handling.</p>
+                <div class="tech-stack">
+                    <span class="tech">AWS Lambda</span>
+                    <span class="tech">API Gateway</span>
+                    <span class="tech">RDS (MySQL)</span>
+                    <span class="tech">Python</span>
+                    <span class="tech">VPC</span>
+                </div>
+            </div>
+            
+            <div class="project">
+                <h3>Infrastructure Automation with Terraform</h3>
+                <p>Automated AWS infrastructure deployment including EC2 instances, security groups, and nginx web server configuration. Infrastructure as Code best practices.</p>
+                <div class="tech-stack">
+                    <span class="tech">Terraform</span>
+                    <span class="tech">AWS EC2</span>
+                    <span class="tech">Nginx</span>
+                    <span class="tech">IaC</span>
+                </div>
+            </div>
+            
+            <div class="project">
+                <h3>Automated Monitoring System</h3>
+                <p>Scheduled Lambda function that monitors database health every 5 minutes, logs metrics to CloudWatch. Demonstrates operational automation and observability.</p>
+                <div class="tech-stack">
+                    <span class="tech">AWS Lambda</span>
+                    <span class="tech">EventBridge</span>
+                    <span class="tech">CloudWatch</span>
+                    <span class="tech">Python</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="tech-stack">
+                <span class="tech">AWS</span>
+                <span class="tech">Terraform</span>
+                <span class="tech">GitHub Actions</span>
+                <span class="tech">Docker</span>
+                <span class="tech">Linux</span>
+                <span class="tech">Python</span>
+                <span class="tech">Bash</span>
+                <span class="tech">Git</span>
+                <span class="tech">CI/CD</span>
+                <span class="tech">Infrastructure as Code</span>
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/yourusername" target="_blank">GitHub Portfolio</a>
+            <a href="mailto:semensabov42@gmail.com">Contact Me</a>
+            <a href="https://www.linkedin.com/in/semen-sabov-517092b3/" target="_blank">LinkedIn</a>
+        </div>
+        
+        <div class="deployment-info">
+            <strong>🚀 This site is deployed via CI/CD!</strong><br>
+            Every push to the main branch automatically triggers GitHub Actions to deploy updates to AWS S3.<br>
+            <small>Last deployed: <span id="date"></span></small>
+        </div>
+        
+        <footer>
+            <p>Built with ❤️ using GitHub Actions + AWS S3</p>
+            <p>© 2026 Semen Sabov</p>
+        </footer>
+    </div>
+    
     <script>
         document.getElementById('date').textContent = new Date().toLocaleString();
     </script>
