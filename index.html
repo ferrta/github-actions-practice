@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My CI/CD Site</title>
+</head>
+<body>
+    <h1>Deployed with GitHub Actions!</h1>
+    <p>This site automatically deploys when I push to GitHub.</p>
+    <p>Last updated: <span id="date"></span></p>
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
